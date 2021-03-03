@@ -7,10 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		CF6306A225F035F6006A1240 /* CrashReporter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF63066D25F0145C006A1240 /* CrashReporter.framework */; };
-		CF6306A325F035F6006A1240 /* CrashReporter.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CF63066D25F0145C006A1240 /* CrashReporter.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		CF6306A425F035F6006A1240 /* TealiumCore.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF63065225F01446006A1240 /* TealiumCore.xcframework */; };
-		CF6306A525F035F6006A1240 /* TealiumCore.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CF63065225F01446006A1240 /* TealiumCore.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		CF6306AB25F039A5006A1240 /* CrashReporter.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF6306AA25F039A5006A1240 /* CrashReporter.xcframework */; };
+		CF6306AC25F039A5006A1240 /* CrashReporter.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CF6306AA25F039A5006A1240 /* CrashReporter.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		CF6306B025F03A11006A1240 /* TealiumCore.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF6306AF25F03A11006A1240 /* TealiumCore.xcframework */; };
+		CF6306B125F03A11006A1240 /* TealiumCore.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CF6306AF25F03A11006A1240 /* TealiumCore.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		D7B3AC47247EC2280040A0DE /* TealiumCrashModule.h in Headers */ = {isa = PBXBuildFile; fileRef = D7B3AC45247EC2280040A0DE /* TealiumCrashModule.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D7B3AC54247EC8340040A0DE /* CrashModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7B3AC50247EC8340040A0DE /* CrashModule.swift */; };
 		D7B3AC55247EC8340040A0DE /* CrashReporter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7B3AC51247EC8340040A0DE /* CrashReporter.swift */; };
@@ -36,14 +36,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		CF6306A625F035F6006A1240 /* Embed Frameworks */ = {
+		CF6306AD25F039A5006A1240 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				CF6306A525F035F6006A1240 /* TealiumCore.xcframework in Embed Frameworks */,
-				CF6306A325F035F6006A1240 /* CrashReporter.framework in Embed Frameworks */,
+				CF6306B125F03A11006A1240 /* TealiumCore.xcframework in Embed Frameworks */,
+				CF6306AC25F039A5006A1240 /* CrashReporter.xcframework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -62,6 +62,8 @@
 		CF63065825F01446006A1240 /* TealiumVisitorService.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = TealiumVisitorService.xcframework; path = Carthage/Build/TealiumVisitorService.xcframework; sourceTree = "<group>"; };
 		CF63066D25F0145C006A1240 /* CrashReporter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CrashReporter.framework; path = Carthage/Build/iOS/CrashReporter.framework; sourceTree = "<group>"; };
 		CF63067625F02B77006A1240 /* CrashReporter.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = CrashReporter.xcframework; path = Carthage/Checkouts/plcrashreporter/CrashReporter.xcframework; sourceTree = "<group>"; };
+		CF6306AA25F039A5006A1240 /* CrashReporter.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = CrashReporter.xcframework; path = ../../plcrashreporter/CrashReporter.xcframework; sourceTree = "<group>"; };
+		CF6306AF25F03A11006A1240 /* TealiumCore.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = TealiumCore.xcframework; path = "../../../../../Downloads/tealium-xcframeworks 2/TealiumCore.xcframework"; sourceTree = "<group>"; };
 		D7B3AC42247EC2280040A0DE /* TealiumCrashModule.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TealiumCrashModule.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D7B3AC45247EC2280040A0DE /* TealiumCrashModule.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TealiumCrashModule.h; sourceTree = "<group>"; };
 		D7B3AC46247EC2280040A0DE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -84,8 +86,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CF6306A425F035F6006A1240 /* TealiumCore.xcframework in Frameworks */,
-				CF6306A225F035F6006A1240 /* CrashReporter.framework in Frameworks */,
+				CF6306B025F03A11006A1240 /* TealiumCore.xcframework in Frameworks */,
+				CF6306AB25F039A5006A1240 /* CrashReporter.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -103,7 +105,9 @@
 		CF63064F25F01445006A1240 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				CF6306AF25F03A11006A1240 /* TealiumCore.xcframework */,
 				CF63067625F02B77006A1240 /* CrashReporter.xcframework */,
+				CF6306AA25F039A5006A1240 /* CrashReporter.xcframework */,
 				CF63066D25F0145C006A1240 /* CrashReporter.framework */,
 				CF63065425F01446006A1240 /* TealiumAttribution.xcframework */,
 				CF63065025F01446006A1240 /* TealiumAutotracking.xcframework */,
@@ -202,7 +206,7 @@
 				D7B3AC3E247EC2280040A0DE /* Sources */,
 				D7B3AC3F247EC2280040A0DE /* Frameworks */,
 				D7B3AC40247EC2280040A0DE /* Resources */,
-				CF6306A625F035F6006A1240 /* Embed Frameworks */,
+				CF6306AD25F039A5006A1240 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
