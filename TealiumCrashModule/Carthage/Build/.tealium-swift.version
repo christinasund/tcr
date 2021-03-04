@@ -1,0 +1,131 @@
+{
+  "commitish" : "2.2.2",
+  "iOS" : [
+    {
+      "swiftToolchainVersion" : "5.3.2 (swiftlang-1200.0.45 clang-1200.0.32.28)",
+      "hash" : "45cb2381fd4a20ee8eec8c84911cfb576b4053253433404593cd58e3fd143772",
+      "name" : "TealiumAttribution",
+      "container" : "TealiumAttribution.xcframework",
+      "identifier" : "ios-arm64_i386_x86_64-simulator"
+    },
+    {
+      "swiftToolchainVersion" : "5.3.2 (swiftlang-1200.0.45 clang-1200.0.32.28)",
+      "hash" : "a86e21283e006170d1eb0d845f17b9d167af37b92447d8ca0ea45daa41184376",
+      "name" : "TealiumAttribution",
+      "container" : "TealiumAttribution.xcframework",
+      "identifier" : "ios-arm64_armv7"
+    },
+    {
+      "swiftToolchainVersion" : "5.3.2 (swiftlang-1200.0.45 clang-1200.0.32.28)",
+      "hash" : "2cc0c1d1d4628829fd8551ab9313d36170642a2c3904c0b51ac530c0b35007ae",
+      "name" : "TealiumAutotracking",
+      "container" : "TealiumAutotracking.xcframework",
+      "identifier" : "ios-arm64_i386_x86_64-simulator"
+    },
+    {
+      "swiftToolchainVersion" : "5.3.2 (swiftlang-1200.0.45 clang-1200.0.32.28)",
+      "hash" : "f72979e5df4daee5ad2ea6cca5dc61dfa28479bfa4f351e1f5f61ed94a4271c7",
+      "name" : "TealiumAutotracking",
+      "container" : "TealiumAutotracking.xcframework",
+      "identifier" : "ios-arm64_armv7"
+    },
+    {
+      "swiftToolchainVersion" : "5.3.2 (swiftlang-1200.0.45 clang-1200.0.32.28)",
+      "hash" : "462f2f1d079f8e565f7ab7758cfbf383e40d6da3cb1e31b58604ad7f46e694cb",
+      "name" : "TealiumCollect",
+      "container" : "TealiumCollect.xcframework",
+      "identifier" : "ios-arm64_armv7"
+    },
+    {
+      "swiftToolchainVersion" : "5.3.2 (swiftlang-1200.0.45 clang-1200.0.32.28)",
+      "hash" : "1d504efde983b29f2905787a37b490376bb56cd0b9528ce7254de16998e89995",
+      "name" : "TealiumCollect",
+      "container" : "TealiumCollect.xcframework",
+      "identifier" : "ios-arm64_i386_x86_64-simulator"
+    },
+    {
+      "swiftToolchainVersion" : "5.3.2 (swiftlang-1200.0.45 clang-1200.0.32.28)",
+      "hash" : "29bff445618e825eb07c6e6ee0b6ee9e4b3258a0c0ddb8cf854455a773ff7092",
+      "name" : "TealiumCore",
+      "container" : "TealiumCore.xcframework",
+      "identifier" : "ios-arm64_i386_x86_64-simulator"
+    },
+    {
+      "swiftToolchainVersion" : "5.3.2 (swiftlang-1200.0.45 clang-1200.0.32.28)",
+      "hash" : "c240a9a8104e40575fa211d570fe4502b1aef218d1b439eb5a5104e9497676b1",
+      "name" : "TealiumCore",
+      "container" : "TealiumCore.xcframework",
+      "identifier" : "ios-arm64_armv7"
+    },
+    {
+      "swiftToolchainVersion" : "5.3.2 (swiftlang-1200.0.45 clang-1200.0.32.28)",
+      "hash" : "0556ce416d9a635281fc161527afa8a526ba4eaba4530fc5687f630c8cf43128",
+      "name" : "TealiumLifecycle",
+      "container" : "TealiumLifecycle.xcframework",
+      "identifier" : "ios-arm64_i386_x86_64-simulator"
+    },
+    {
+      "swiftToolchainVersion" : "5.3.2 (swiftlang-1200.0.45 clang-1200.0.32.28)",
+      "hash" : "20377f2cfe2cd50ab74b3a9c7825859e1eba744e6c9e26f3647af60561a36e90",
+      "name" : "TealiumLifecycle",
+      "container" : "TealiumLifecycle.xcframework",
+      "identifier" : "ios-arm64_armv7"
+    },
+    {
+      "swiftToolchainVersion" : "5.3.2 (swiftlang-1200.0.45 clang-1200.0.32.28)",
+      "hash" : "654673cfbe7a83d5b0b72d242f4459d477203e55f69b5381be08ac3723222774",
+      "name" : "TealiumLocation",
+      "container" : "TealiumLocation.xcframework",
+      "identifier" : "ios-arm64_i386_x86_64-simulator"
+    },
+    {
+      "swiftToolchainVersion" : "5.3.2 (swiftlang-1200.0.45 clang-1200.0.32.28)",
+      "hash" : "b82698111bd4a61a17c551987e25f293c932688c53ff875c510215e630fd9bd2",
+      "name" : "TealiumLocation",
+      "container" : "TealiumLocation.xcframework",
+      "identifier" : "ios-arm64_armv7"
+    },
+    {
+      "swiftToolchainVersion" : "5.3.2 (swiftlang-1200.0.45 clang-1200.0.32.28)",
+      "hash" : "f67b97198e36626a08638c90701ee312cace01fd9d7f8d851e9304b5d2d5d5b0",
+      "name" : "TealiumRemoteCommands",
+      "container" : "TealiumRemoteCommands.xcframework",
+      "identifier" : "ios-arm64_i386_x86_64-simulator"
+    },
+    {
+      "swiftToolchainVersion" : "5.3.2 (swiftlang-1200.0.45 clang-1200.0.32.28)",
+      "hash" : "e80f18c5ff913e6444937e1e76d158d7440c95ed2acb5c08bf8961e81acf4568",
+      "name" : "TealiumRemoteCommands",
+      "container" : "TealiumRemoteCommands.xcframework",
+      "identifier" : "ios-arm64_armv7"
+    },
+    {
+      "swiftToolchainVersion" : "5.3.2 (swiftlang-1200.0.45 clang-1200.0.32.28)",
+      "hash" : "8ea269fd8263229846e833a2bab81321bb2bc4822b9e270a8b677d823a2b670b",
+      "name" : "TealiumTagManagement",
+      "container" : "TealiumTagManagement.xcframework",
+      "identifier" : "ios-arm64_i386_x86_64-simulator"
+    },
+    {
+      "swiftToolchainVersion" : "5.3.2 (swiftlang-1200.0.45 clang-1200.0.32.28)",
+      "hash" : "3a9c0e10b20a3ac0d499d1cb48aa9fbff7011efd63c03a7f3560e2fb1b4254ff",
+      "name" : "TealiumTagManagement",
+      "container" : "TealiumTagManagement.xcframework",
+      "identifier" : "ios-arm64_armv7"
+    },
+    {
+      "swiftToolchainVersion" : "5.3.2 (swiftlang-1200.0.45 clang-1200.0.32.28)",
+      "hash" : "cd63ff5c98226c5103f2b1173439782409f5020da349364dabd8af9c49bedba2",
+      "name" : "TealiumVisitorService",
+      "container" : "TealiumVisitorService.xcframework",
+      "identifier" : "ios-arm64_i386_x86_64-simulator"
+    },
+    {
+      "swiftToolchainVersion" : "5.3.2 (swiftlang-1200.0.45 clang-1200.0.32.28)",
+      "hash" : "5955d5cd4cf0a83513893868285d68b3ed52d26b1677b86c18724f1d19cd1438",
+      "name" : "TealiumVisitorService",
+      "container" : "TealiumVisitorService.xcframework",
+      "identifier" : "ios-arm64_armv7"
+    }
+  ]
+}

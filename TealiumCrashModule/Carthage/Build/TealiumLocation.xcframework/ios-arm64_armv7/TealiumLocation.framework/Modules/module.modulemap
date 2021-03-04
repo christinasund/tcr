@@ -1,0 +1,4 @@
+framework module TealiumLocation {
+  header "TealiumLocation-Swift.h"
+  requires objc
+}

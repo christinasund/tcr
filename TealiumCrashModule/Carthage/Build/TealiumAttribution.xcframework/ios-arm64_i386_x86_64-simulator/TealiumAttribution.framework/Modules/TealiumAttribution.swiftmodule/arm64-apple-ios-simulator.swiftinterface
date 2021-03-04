@@ -1,0 +1,204 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.3.2 (swiftlang-1200.0.45 clang-1200.0.32.28)
+// swift-module-flags: -target arm64-apple-ios9.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name TealiumAttribution
+import AdSupport
+import AppTrackingTransparency
+import Foundation
+import StoreKit
+import Swift
+import TealiumCore
+import UIKit
+import iAd
+public protocol TealiumASIdentifierManagerProtocol {
+  static var shared: TealiumAttribution.TealiumASIdentifierManagerProtocol { get }
+  var attManager: TealiumAttribution.TealiumATTrackingManagerProtocol? { get set }
+  var advertisingIdentifier: Swift.String { get }
+  var isAdvertisingTrackingEnabled: Swift.String { get }
+  var identifierForVendor: Swift.String { get }
+  var trackingAuthorizationStatus: Swift.String { get }
+}
+public protocol TealiumATTrackingManagerProtocol {
+  static var trackingAuthorizationStatus: Swift.UInt { get }
+  var trackingAuthorizationStatusDescription: Swift.String { get }
+}
+@_hasMissingDesignatedInitializers public class TealiumASIdentifierManager : TealiumAttribution.TealiumASIdentifierManagerProtocol {
+  public var attManager: TealiumAttribution.TealiumATTrackingManagerProtocol?
+  public static var shared: TealiumAttribution.TealiumASIdentifierManagerProtocol
+  public var advertisingIdentifier: Swift.String {
+    get
+    set
+  }
+  public var isAdvertisingTrackingEnabled: Swift.String {
+    get
+    set
+  }
+  public var trackingAuthorizationStatus: Swift.String {
+    get
+    set
+  }
+  public var identifierForVendor: Swift.String {
+    get
+    set
+  }
+  @objc deinit
+}
+@available(iOS 14, *)
+extension ATTrackingManager.AuthorizationStatus {
+  public static func string(from value: Swift.UInt) -> Swift.String
+}
+public struct AttributionKey {
+  public static let allCases: [Swift.String]
+}
+public struct AppleInternalKeys {
+}
+public enum TrackingAuthorizationDescription {
+}
+public struct PersistentAttributionData : Swift.Codable {
+  public subscript(key: Swift.String) -> Swift.String? {
+    get
+  }
+  public enum CodingKeys : Swift.String, Swift.CodingKey {
+    case clickedWithin30D
+    case clickedDate
+    case conversionDate
+    case conversionType
+    case purchaseDate
+    case orgName
+    case orgId
+    case campaignId
+    case campaignName
+    case adGroupId
+    case adGroupName
+    case adKeyword
+    case adKeywordMatchType
+    case creativeSetName
+    case creativeSetId
+    case region
+    public typealias RawValue = Swift.String
+    public init?(rawValue: Swift.String)
+    public var rawValue: Swift.String {
+      get
+    }
+    public var stringValue: Swift.String {
+      get
+    }
+    public init?(stringValue: Swift.String)
+    public var intValue: Swift.Int? {
+      get
+    }
+    public init?(intValue: Swift.Int)
+  }
+  public var count: Swift.Int {
+    get
+  }
+  public init?(withDictionary dictionary: [Swift.String : Any])
+  public var dictionary: [Swift.String : Swift.String] {
+    get
+  }
+  public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: Swift.Encoder) throws
+}
+public protocol Attributable : AnyObject {
+  @available(iOS 11.3, *)
+  static func registerAppForAdNetworkAttribution()
+  @available(iOS 14.0, *)
+  static func updateConversionValue(_ conversionValue: Swift.Int)
+}
+extension Attributable {
+  public static func registerAppForAdNetworkAttribution()
+  public static func updateConversionValue(_ conversionValue: Swift.Int)
+}
+public class Attributor : TealiumAttribution.Attributable {
+  public init()
+  public static func registerAppForAdNetworkAttribution()
+  public static func updateConversionValue(_ conversionValue: Swift.Int)
+  @objc deinit
+}
+public protocol TealiumSKAdAttributionProtocol {
+  func extractConversionInfo(from dispatch: TealiumCore.TealiumTrackRequest)
+  func registerAdNetwork()
+  func updateConversion(value: Swift.Int)
+}
+public struct TealiumSKAdAttribution : TealiumAttribution.TealiumSKAdAttributionProtocol {
+  public init(config: TealiumCore.TealiumConfig, attributor: TealiumAttribution.Attributable = Attributor())
+  public func extractConversionInfo(from dispatch: TealiumCore.TealiumTrackRequest)
+  public func registerAdNetwork()
+  public func updateConversion(value: Swift.Int)
+}
+public class AttributionData : TealiumAttribution.AttributionDataProtocol {
+  public var appleAttributionDetails: TealiumAttribution.PersistentAttributionData?
+  public var adAttribution: TealiumAttribution.TealiumSKAdAttributionProtocol?
+  public init(config: TealiumCore.TealiumConfig, diskStorage: TealiumCore.TealiumDiskStorageProtocol, identifierManager: TealiumAttribution.TealiumASIdentifierManagerProtocol = TealiumASIdentifierManager.shared, adClient: TealiumAttribution.TealiumAdClientProtocol = TealiumAdClient.shared, adAttribution: TealiumAttribution.TealiumSKAdAttributionProtocol? = nil)
+  public var idfa: Swift.String {
+    get
+    set
+  }
+  public var idfv: Swift.String {
+    get
+    set
+  }
+  public var isAdvertisingTrackingEnabled: Swift.String {
+    get
+    set
+  }
+  public var trackingAuthorizationStatus: Swift.String {
+    get
+    set
+  }
+  public var volatileData: [Swift.String : Any] {
+    get
+    set
+  }
+  public var allAttributionData: [Swift.String : Any] {
+    get
+    set
+  }
+  public func appleSearchAdsData(_ completion: @escaping (TealiumAttribution.PersistentAttributionData) -> Swift.Void)
+  public func updateConversionValue(from dispatch: TealiumCore.TealiumRequest)
+  @objc deinit
+}
+public protocol AttributionDataProtocol {
+  var allAttributionData: [Swift.String : Any] { get }
+  var appleAttributionDetails: TealiumAttribution.PersistentAttributionData? { get set }
+  var idfa: Swift.String { get }
+  var idfv: Swift.String { get }
+  var volatileData: [Swift.String : Any] { get }
+  var isAdvertisingTrackingEnabled: Swift.String { get }
+  func appleSearchAdsData(_ completion: @escaping (TealiumAttribution.PersistentAttributionData) -> Swift.Void)
+  func updateConversionValue(from dispatch: TealiumCore.TealiumRequest)
+}
+public protocol TealiumAdClientProtocol {
+  static var shared: TealiumAttribution.TealiumAdClientProtocol { get }
+  func requestAttributionDetails(_ completionHandler: @escaping ([Swift.String : ObjectiveC.NSObject]?, Swift.Error?) -> Swift.Void)
+}
+@_hasMissingDesignatedInitializers public class TealiumAdClient : TealiumAttribution.TealiumAdClientProtocol {
+  public static var shared: TealiumAttribution.TealiumAdClientProtocol
+  public func requestAttributionDetails(_ completionHandler: @escaping ([Swift.String : ObjectiveC.NSObject]?, Swift.Error?) -> Swift.Void)
+  @objc deinit
+}
+public class AttributionModule : TealiumCore.Collector, TealiumCore.DispatchListener {
+  final public let id: Swift.String
+  public var data: [Swift.String : Any]? {
+    get
+  }
+  public var config: TealiumCore.TealiumConfig
+  required public init(context: TealiumCore.TealiumContext, delegate: TealiumCore.ModuleDelegate?, diskStorage: TealiumCore.TealiumDiskStorageProtocol?, completion: ((Swift.Result<Swift.Bool, Swift.Error>, [Swift.String : Any]?)) -> Swift.Void)
+  public func willTrack(request: TealiumCore.TealiumRequest)
+  @objc deinit
+}
+extension TealiumConfig {
+  public var searchAdsEnabled: Swift.Bool {
+    get
+    set
+  }
+  public var skAdAttributionEnabled: Swift.Bool {
+    get
+    set
+  }
+}
+extension Collectors {
+  public static let Attribution: TealiumAttribution.AttributionModule.Type
+}
+extension TealiumAttribution.PersistentAttributionData.CodingKeys : Swift.Equatable {}
+extension TealiumAttribution.PersistentAttributionData.CodingKeys : Swift.Hashable {}
+extension TealiumAttribution.PersistentAttributionData.CodingKeys : Swift.RawRepresentable {}

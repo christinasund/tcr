@@ -1,0 +1,4 @@
+framework module TealiumAttribution {
+  header "TealiumAttribution-Swift.h"
+  requires objc
+}
