@@ -1,4 +1,0 @@
-framework module TealiumAutotracking {
-  header "TealiumAutotracking-Swift.h"
-  requires objc
-}
