@@ -104,6 +104,7 @@ public class TealiumLifecycleListeners {
     deinit {
         sleepNotificationObserser = nil
         wakeNotificationObserver = nil
+        removeAll()
     }
 
 }

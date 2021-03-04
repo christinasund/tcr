@@ -7,10 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		CF63074E25F06A44006A1240 /* TealiumCore.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF63074C25F06A44006A1240 /* TealiumCore.xcframework */; };
-		CF63074F25F06A44006A1240 /* TealiumCore.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CF63074C25F06A44006A1240 /* TealiumCore.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		CF63075025F06A44006A1240 /* CrashReporter.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF63074D25F06A44006A1240 /* CrashReporter.xcframework */; };
 		CF63075125F06A44006A1240 /* CrashReporter.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CF63074D25F06A44006A1240 /* CrashReporter.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		CF63075625F06B51006A1240 /* TealiumCore.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF63075525F06B51006A1240 /* TealiumCore.xcframework */; };
+		CF63075725F06B51006A1240 /* TealiumCore.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CF63075525F06B51006A1240 /* TealiumCore.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		D7B3AC47247EC2280040A0DE /* TealiumCrashModule.h in Headers */ = {isa = PBXBuildFile; fileRef = D7B3AC45247EC2280040A0DE /* TealiumCrashModule.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D7B3AC54247EC8340040A0DE /* CrashModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7B3AC50247EC8340040A0DE /* CrashModule.swift */; };
 		D7B3AC55247EC8340040A0DE /* CrashReporter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7B3AC51247EC8340040A0DE /* CrashReporter.swift */; };
@@ -42,8 +42,8 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				CF63075725F06B51006A1240 /* TealiumCore.xcframework in Embed Frameworks */,
 				CF63075125F06A44006A1240 /* CrashReporter.xcframework in Embed Frameworks */,
-				CF63074F25F06A44006A1240 /* TealiumCore.xcframework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -51,8 +51,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		CF63074C25F06A44006A1240 /* TealiumCore.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = TealiumCore.xcframework; sourceTree = "<group>"; };
 		CF63074D25F06A44006A1240 /* CrashReporter.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = CrashReporter.xcframework; sourceTree = "<group>"; };
+		CF63075525F06B51006A1240 /* TealiumCore.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = TealiumCore.xcframework; sourceTree = "<group>"; };
 		D7B3AC42247EC2280040A0DE /* TealiumCrashModule.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TealiumCrashModule.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D7B3AC45247EC2280040A0DE /* TealiumCrashModule.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TealiumCrashModule.h; sourceTree = "<group>"; };
 		D7B3AC46247EC2280040A0DE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -75,8 +75,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CF63075625F06B51006A1240 /* TealiumCore.xcframework in Frameworks */,
 				CF63075025F06A44006A1240 /* CrashReporter.xcframework in Frameworks */,
-				CF63074E25F06A44006A1240 /* TealiumCore.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -94,8 +94,8 @@
 		CF63064F25F01445006A1240 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				CF63075525F06B51006A1240 /* TealiumCore.xcframework */,
 				CF63074D25F06A44006A1240 /* CrashReporter.xcframework */,
-				CF63074C25F06A44006A1240 /* TealiumCore.xcframework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -437,6 +437,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
+				DEVELOPMENT_ASSET_PATHS = "";
 				DEVELOPMENT_TEAM = XC939GDC9P;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -474,6 +475,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
+				DEVELOPMENT_ASSET_PATHS = "";
 				DEVELOPMENT_TEAM = XC939GDC9P;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
