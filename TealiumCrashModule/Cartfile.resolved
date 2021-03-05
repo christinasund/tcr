@@ -1,2 +1,2 @@
-github "tealium/plcrashreporter" "1.5.0"
+github "christinasund/plcr" "0.0.1"
 github "tealium/tealium-swift" "2.2.2"
