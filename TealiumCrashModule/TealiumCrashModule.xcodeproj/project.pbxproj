@@ -11,6 +11,8 @@
 		CF538DD325F1B5AC00CE0698 /* CrashReporter.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CF538DB525F1A10900CE0698 /* CrashReporter.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		CF538DD425F1B5AC00CE0698 /* TealiumCore.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF538DB625F1A10900CE0698 /* TealiumCore.xcframework */; };
 		CF538DD525F1B5AC00CE0698 /* TealiumCore.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CF538DB625F1A10900CE0698 /* TealiumCore.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		CF538E3D25F2F68E00CE0698 /* CrashReporter.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = CF538DB525F1A10900CE0698 /* CrashReporter.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		CF538E3E25F2F68E00CE0698 /* TealiumCore.xcframework in CopyFiles */ = {isa = PBXBuildFile; fileRef = CF538DB625F1A10900CE0698 /* TealiumCore.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		D7B3AC47247EC2280040A0DE /* TealiumCrashModule.h in Headers */ = {isa = PBXBuildFile; fileRef = D7B3AC45247EC2280040A0DE /* TealiumCrashModule.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D7B3AC54247EC8340040A0DE /* CrashModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7B3AC50247EC8340040A0DE /* CrashModule.swift */; };
 		D7B3AC55247EC8340040A0DE /* CrashReporter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7B3AC51247EC8340040A0DE /* CrashReporter.swift */; };
@@ -36,6 +38,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		CF538E3C25F2F68300CE0698 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				CF538E3D25F2F68E00CE0698 /* CrashReporter.framework in CopyFiles */,
+				CF538E3E25F2F68E00CE0698 /* TealiumCore.xcframework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		CFD0E8A0256DBDDA00A496BE /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -185,6 +198,7 @@
 				D7B3AC3F247EC2280040A0DE /* Frameworks */,
 				D7B3AC40247EC2280040A0DE /* Resources */,
 				CFD0E8A0256DBDDA00A496BE /* Embed Frameworks */,
+				CF538E3C25F2F68300CE0698 /* CopyFiles */,
 			);
 			buildRules = (
 			);
