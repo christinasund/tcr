@@ -7,10 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CF6E3A3825F802CE00900902 /* CrashReporter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF6E3A3725F802CE00900902 /* CrashReporter.framework */; };
+		CF6E3A3925F802CE00900902 /* CrashReporter.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CF6E3A3725F802CE00900902 /* CrashReporter.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		CF8AEAC225F6FA9D00783CA0 /* TealiumCore.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF8AEA8C25F6E48E00783CA0 /* TealiumCore.xcframework */; };
 		CF8AEAC325F6FA9D00783CA0 /* TealiumCore.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CF8AEA8C25F6E48E00783CA0 /* TealiumCore.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		CF8AEAC725F6FD8700783CA0 /* CrashReporter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF8AEAC625F6FD8700783CA0 /* CrashReporter.framework */; };
-		CF8AEAC825F6FD8700783CA0 /* CrashReporter.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CF8AEAC625F6FD8700783CA0 /* CrashReporter.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		D7B3AC47247EC2280040A0DE /* TealiumCrashModule.h in Headers */ = {isa = PBXBuildFile; fileRef = D7B3AC45247EC2280040A0DE /* TealiumCrashModule.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D7B3AC54247EC8340040A0DE /* CrashModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7B3AC50247EC8340040A0DE /* CrashModule.swift */; };
 		D7B3AC55247EC8340040A0DE /* CrashReporter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7B3AC51247EC8340040A0DE /* CrashReporter.swift */; };
@@ -43,7 +43,7 @@
 			dstSubfolderSpec = 10;
 			files = (
 				CF8AEAC325F6FA9D00783CA0 /* TealiumCore.xcframework in Embed Frameworks */,
-				CF8AEAC825F6FD8700783CA0 /* CrashReporter.framework in Embed Frameworks */,
+				CF6E3A3925F802CE00900902 /* CrashReporter.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -51,8 +51,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		CF6E3A3725F802CE00900902 /* CrashReporter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CrashReporter.framework; path = Carthage/Build/iOS/CrashReporter.framework; sourceTree = "<group>"; };
 		CF8AEA8C25F6E48E00783CA0 /* TealiumCore.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = TealiumCore.xcframework; path = Carthage/Build/TealiumCore.xcframework; sourceTree = "<group>"; };
-		CF8AEAC625F6FD8700783CA0 /* CrashReporter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CrashReporter.framework; path = Carthage/Build/iOS/CrashReporter.framework; sourceTree = "<group>"; };
 		D7B3AC42247EC2280040A0DE /* TealiumCrashModule.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TealiumCrashModule.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D7B3AC45247EC2280040A0DE /* TealiumCrashModule.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TealiumCrashModule.h; sourceTree = "<group>"; };
 		D7B3AC46247EC2280040A0DE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -76,7 +76,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CF8AEAC225F6FA9D00783CA0 /* TealiumCore.xcframework in Frameworks */,
-				CF8AEAC725F6FD8700783CA0 /* CrashReporter.framework in Frameworks */,
+				CF6E3A3825F802CE00900902 /* CrashReporter.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -94,7 +94,7 @@
 		CF538DD125F1B5AC00CE0698 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				CF8AEAC625F6FD8700783CA0 /* CrashReporter.framework */,
+				CF6E3A3725F802CE00900902 /* CrashReporter.framework */,
 				CF8AEA8C25F6E48E00783CA0 /* TealiumCore.xcframework */,
 			);
 			name = Frameworks;
