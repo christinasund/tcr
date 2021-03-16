@@ -1,3 +1,4 @@
+#binary "https://tags.tiqcdn.com/dle/services-christina/mobile-test/tealium-carthage-plcrashreporter.json?_cb=2"
 binary "https://tags.tiqcdn.com/dle/services-christina/mobile/tealium-carthage-crash.json?_cb=230948920384902384902"
 #github "christinasund/plcr"
 github "tealium/tealium-swift"
